@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Picker & Visualizer</h1>
+        <div class="sections">
+            <!-- Section 1: Choose Color -->
+            <div class="section" id="pickerSection">
+                <h2>Pick a Color</h2>
+                <input type="color" id="colorPicker" value="#ff6347">
+                <button id="applyColor">Show Color Value</button>
+                <div id="colorDisplay" class="color-display">
+                    <p>Hex Value: <span id="colorValue">#ff6347</span></p>
+                    <button id="copyColor">Copy Hex</button>
+                </div>
+            </div>
+            <!-- Section 2: Input Color Value -->
+            <div class="section" id="inputSection">
+                <h2>Enter Hex Value</h2>
+                <input type="text" id="colorInput" placeholder="#ff6347">
+                <button id="showColor">Visualize Color</button>
+                <div id="visualizeColor" class="color-visualizer">
+                    <p>Preview:</p>
+                    <div id="colorBox" class="color-box"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
